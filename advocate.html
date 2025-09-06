@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate - MercyEliana Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2E8B57;
+            --medium-green: #3CB371;
+            --dark-green: #006400;
+            --light-green: #98FB98;
+            --white: #FFFFFF;
+            --light-gray: #F8F8F8;
+            --text-color: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        /* Header */
+        .advocate-header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(rgba(46, 139, 87, 0.9), rgba(46, 139, 87, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            color: var(--white);
+        }
+        
+        .advocate-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .advocate-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Main Content */
+        .advocate-intro {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .advocate-intro h2 {
+            color: var(--primary-green);
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .advocate-intro h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--light-green);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        /* Options Grid */
+        .advocate-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .option-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--primary-green);
+        }
+        
+        .option-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .option-card.highlight {
+            border-top: 5px solid var(--light-green);
+            position: relative;
+        }
+        
+        .option-card.highlight::after {
+            content: 'Most Popular';
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: var(--light-green);
+            color: var(--dark-green);
+            padding: 0.3rem 2rem;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        
+        .option-icon {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+        
+        .option-content {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .option-content h3 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+        
+        .option-content ul {
+            text-align: left;
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .option-content ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-green);
+        }
+        
+        .btn:hover {
+            background: var(--white);
+            color: var(--primary-green);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-green);
+            border: 2px solid var(--primary-green);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-green);
+            color: var(--white);
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background: var(--light-gray);
+            padding: 3rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--light-green);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial p {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+        
+        /* Footer CTA */
+        .footer-cta {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--light-green);
+        }
+        
+        .footer-cta h2 {
+            color: var(--dark-green);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .advocate-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .option-card.highlight::after {
+                right: -25px;
+                padding: 0.2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="advocate-header">
+        <div class="container">
+            <h1>Become an Advocate</h1>
+            <p>Join our movement to protect women's rights, prevent gender-based violence, and empower Black women in tech</p>
+            <a href="#options" class="btn">See How You Can Help</a>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="advocate-intro">
+        <div class="container">
+            <h2>Your Voice Makes a Difference</h2>
+            <p>Choose how you want to amplify our mission. Every action helps create change in our communities.</p>
+        </div>
+    </section>
+
+    <!-- Options Grid -->
+    <section id="options" class="container">
+        <div class="advocate-options">
+            <!-- Option 1 -->
+            <div class="option-card">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Digital Advocate</h3>
+                    <p>Spread awareness online with just a few clicks:</p>
+                    <ul>
+                        <li>Share our posts on social media</li>
+                        <li>Use our hashtag #MercyElianaRise</li>
+                        <li>Join our online community</li>
+                    </ul>
+                    <a href="#" class="btn">Get Sharing Toolkit</a>
+                </div>
+            </div>
+            
+            <!-- Option 2 (Highlighted) -->
+            <div class="option-card highlight">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Ambassador</h3>
+                    <p>Lead local awareness efforts:</p>
+                    <ul>
+                        <li>Host awareness events</li>
+                        <li>Distribute educational materials</li>
+                        <li>Represent us at community meetings</li>
+                        <li>Get special training</li>
+                    </ul>
+                    <a href="#" class="btn">Apply Now</a>
+                </div>
+            </div>
+            
+            <!-- Option 3 -->
+            <div class="option-card">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Partner</h3>
+                    <p>Engage your workplace in our mission:</p>
+                    <ul>
+                        <li>Sponsor our programs</li>
+                        <li>Host employee volunteer days</li>
+                        <li>Match employee donations</li>
+                        <li>Feature us in DEI initiatives</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="container">
+        <div class="testimonial">
+            <p>"As a MercyEliana Ambassador, I've helped organize tech workshops for 50+ women in my community. Seeing their confidence grow has been incredibly rewarding."</p>
+            <div class="testimonial-author">- Fatima N., Ambassador since 2022</div>
+        </div>
+    </section>
+
+    <!-- Additional Options -->
+    <section class="container">
+        <div class="advocate-options">
+            <!-- Option 4 -->
+            <div class="option-card">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Event Volunteer</h3>
+                    <p>Help at our upcoming events:</p>
+                    <ul>
+                        <li>Tech training workshops</li>
+                        <li>GBV awareness seminars</li>
+                        <li>Fundraising galas</li>
+                        <li>Community health fairs</li>
+                    </ul>
+                    <a href="#" class="btn-outline">View Event Calendar</a>
+                </div>
+            </div>
+            
+            <!-- Option 5 -->
+            <div class="option-card">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Campus Representative</h3>
+                    <p>Bring our mission to your school:</p>
+                    <ul>
+                        <li>Start a student chapter</li>
+                        <li>Organize campus events</li>
+                        <li>Mobilize student volunteers</li>
+                        <li>Earn leadership experience</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Start a Chapter</a>
+                </div>
+            </div>
+            
+            <!-- Option 6 -->
+            <div class="option-card">
+                <div class="option-content">
+                    <div class="option-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Content Creator</h3>
+                    <p>Use your creative skills:</p>
+                    <ul>
+                        <li>Write blog posts</li>
+                        <li>Create social media content</li>
+                        <li>Design educational materials</li>
+                        <li>Produce short videos</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Join Creative Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Ready to Take Action?</h2>
+            <p>Contact us to discuss how you can best contribute to our mission</p>
+            <a href= "#contact"class="btn">Contact Our Team</a>
+        </div>
+    </section>
+</body>
+</html>
