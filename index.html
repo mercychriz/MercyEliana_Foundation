@@ -1,178 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MercyEliana Foundation</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MercyEliana Foundation | Empowering Women & Girls</title>
+
+    <!-- Basic SEO -->
+    <meta name="description"
+          content="MercyEliana Foundation protects and empowers women and girls through advocacy, health education, gender-based violence prevention, substance abuse prevention, and tech & AI training.">
+    <meta name="keywords"
+          content="MercyEliana Foundation, women empowerment, gender-based violence, HIV, AIDS, reproductive health, tech training, AI skills, Nigeria NGO">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/MercyEliana.png" alt="MercyEliana Foundation Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
-                      <li><a href="events.html">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+<!-- HEADER -->
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="#home" aria-label="MercyEliana Foundation home">
+                <img src="images/MercyEliana.png" alt="MercyEliana Foundation Logo" />
+            </a>
         </div>
-    </header>
 
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pillars">Our Focus</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#team">Meet the Team</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#contact" class="nav-donate">Donate</a></li>
+            </ul>
+
+            <button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
     <section class="hero" id="home">
-        <div class="container">
-            <h1>Empowering Women & Girls Through Advocacy and Technology</h1>
-            <p>Protecting rights, preventing violence, and promoting health and education for women and young girls</p>
-            <a href="#get-involved" class="btn">Join Our Cause</a>
+        <div class="container hero-inner fade-in">
+            <div class="hero-text">
+                <h1>Empowering Women &amp; Girls Through Advocacy, Health &amp; Technology</h1>
+                <p>
+                    MercyEliana Foundation creates safe, inclusive communities where women and young
+                    girls are protected from violence, informed about their health, and equipped
+                    with tech and AI skills to thrive in a digital world.
+                </p>
+                <div class="hero-actions">
+                    <a href="#get-involved" class="btn">Join Our Cause</a>
+                    <a href="#programs" class="btn btn-outline">Explore Our Programs</a>
+                </div>
+            </div>
+            <div class="hero-highlight">
+                <div class="hero-stat">
+                    <span>Protection</span>
+                    <p>Defending the rights of women and girls.</p>
+                </div>
+                <div class="hero-stat">
+                    <span>Health</span>
+                    <p>Educating on STDs, HIV/AIDS &amp; reproductive health.</p>
+                </div>
+                <div class="hero-stat">
+                    <span>Tech &amp; AI</span>
+                    <p>Opening doors to opportunities in technology.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
         <div class="container">
-            <h2>Our Mission</h2>
-            <div class="mission-grid">
-                <div class="mission-card">
+            <h2>Who We Are</h2>
+            <p class="section-intro">
+                MercyEliana Foundation is a women-led non-profit organisation working across communities
+                in Nigeria to protect the rights of women and girls, prevent gender-based violence,
+                promote sexual and reproductive health, and open doors to opportunities in technology
+                and artificial intelligence.
+            </p>
+        </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="pillars" id="pillars">
+        <div class="container">
+            <h2>Our Focus Areas</h2>
+            <div class="pillars-grid">
+                <article class="pillar-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Protection</h3>
-                    <p>Protecting the rights of women and young girls</p>
-                </div>
-                <div class="mission-card">
+                    <p>Protecting the rights of women and young girls.</p>
+                </article>
+                <article class="pillar-card">
                     <i class="fas fa-hand-holding-heart"></i>
                     <h3>Advocacy</h3>
-                    <p>Sensitizing and advocating against gender-based violence</p>
-                </div>
-                <div class="mission-card">
+                    <p>Sensitizing and advocating against gender-based violence.</p>
+                </article>
+                <article class="pillar-card">
                     <i class="fas fa-heartbeat"></i>
                     <h3>Health</h3>
-                    <p>Educating on STDs, HIV/AIDS and reproductive health</p>
-                </div>
-                <div class="mission-card">
+                    <p>Educating on STDs, HIV/AIDS and reproductive health.</p>
+                </article>
+                <article class="pillar-card">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Tech Training</h3>
-                    <p>Empowering Black women with tech and AI skills</p>
-                </div>
+                    <p>Empowering Black women with tech and AI skills.</p>
+                </article>
             </div>
         </div>
     </section>
 
+    <!-- PROGRAMS -->
     <section class="programs" id="programs">
         <div class="container">
             <h2>Our Programs</h2>
-            <div class="programs-list">
-                <div class="program-card">
+            <p class="section-intro">
+                Our programs are rooted in community realities, designed to protect rights,
+                promote health, and build skills that last a lifetime.
+            </p>
+            <div class="programs-grid">
+                <article class="program-card">
                     <h3>Women's Rights Protection</h3>
-                    <p>We work tirelessly to protect and advocate for the rights of women and young girls in our communities.</p>
-                </div>
-                <div class="program-card">
+                    <p>
+                        We work to protect and advocate for the rights of women and young
+                        girls in our communities through legal awareness, referrals, and safe spaces.
+                    </p>
+                </article>
+
+                <article class="program-card">
                     <h3>Gender-Based Violence Prevention</h3>
-                    <p>Through education and advocacy, we fight against all forms of gender-based violence.</p>
-                </div>
-                <div class="program-card">
+                    <p>
+                        Through education and advocacy, we fight against all forms of gender-based
+                        violence, challenging harmful norms and promoting accountability.
+                    </p>
+                </article>
+
+                <article class="program-card">
                     <h3>Health Education</h3>
-                    <p>We provide education on sexually transmitted diseases, HIV/AIDS, and reproductive health issues.</p>
-                </div>
-                <div class="program-card">
+                    <p>
+                        We provide education on sexually transmitted diseases, HIV/AIDS and
+                        reproductive health, enabling informed decisions and safer communities.
+                    </p>
+                </article>
+
+                <article class="program-card">
                     <h3>Substance Abuse Prevention</h3>
-                    <p>Our programs help prevent drug abuse among women and young people.</p>
-                </div>
-                <div class="program-card highlight">
-                    <h3>Tech Training for Black Women</h3>
-                    <p>We provide training in technology and artificial intelligence to empower Black women with valuable skills for the digital economy.</p>
-                </div>
+                    <p>
+                        Our programs help prevent drug abuse among women and young people by
+                        offering information, mentorship, and links to counselling support.
+                    </p>
+                </article>
+
+                <article class="program-card program-highlight">
+                    <h3>Tech &amp; AI Training for Black Women</h3>
+                    <p>
+                        We provide training in technology and artificial intelligence to empower
+                        Black women with valuable skills for the digital economy and future of work.
+                    </p>
+                </article>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Current Project</h2>
+           
+            <div class="programs-grid">
+                <article class="program-card">
+                    <h3>Community Health Outreach Program</h3>
+                    <h3>Goal of the Project</h3>
+<p>
+    By the end of 2030, we aim to ensure that at least 
+    <strong>10 million Nigerians</strong> across the country are reached with
+    messages on HIV/AIDS awareness, prevention, and stigma reduction through
+    our community health outreach programs.
+</p>
+<p>
+    Within this number, we are committed to ensuring that at least 
+    <strong>8 million people are tested and know their HIV status</strong>. 
+    We also aim to ensure that all individuals who test positive are linked to 
+    and able to access <strong>quality, continuous health care services</strong>.
+</p>
+
+                    <p>
+                        This program provides free HIV testing, health education, and community sensitization 
+                        for underserved communities.
+                        <br><br>
+                        <strong>Location:</strong> Calabar, Cross River State &amp; Sango Ota, Ogun State, Nigeria<br>
+                        <strong>Status:</strong> Running monthly
+                    </p>
+
+                    <h4>Pictures from Outreach in Sango Ota, Ogun State</h4>
+
+                    <div class="project-gallery">
+                        <figure class="gallery-item">
+                            <img src="images/DSC09345.jpg" alt="Community sensitization with women and girls">
+                            <figcaption>Community sensitization on gender-based violence and rights.</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="images/DSC09354.jpg" alt="Group photo of participants">
+                            <figcaption>Community sensitization on gender-based violence and rights.</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="images/DSC09384.jpg" alt="Educating market men and women">
+                            <figcaption>Educating market men and women about HIV awareness messages.</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="images/DSC09385.jpg" alt="HIV counselling and testing">
+                            <figcaption>Counselling and HIV testing for community members.</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="images/DSC09405.jpg" alt="Referral to health facility">
+                            <figcaption>Making referrals for clients to the nearest health facility.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+<!-- MONTHLY IMPACT REPORT -->
+<section class="impact-report" id="impact-report">
+    <div class="container">
+        <h2>Monthly Impact Report</h2>
+        <p class="section-intro">
+            Our month-by-month outreach and HIV testing results across Ogun State and 
+            Cross River State.
+        </p>
+
+        <!-- Summary totals (animated) -->
+        <div class="impact-summary-grid">
+            <article class="impact-summary-card">
+                <h3>Total Tested</h3>
+                <p class="impact-total" id="total-tested">500</p>
+            </article>
+
+            <article class="impact-summary-card">
+                <h3>Total HIV Negative</h3>
+                <p class="impact-total" id="total-negative">496</p>
+            </article>
+
+            <article class="impact-summary-card">
+                <h3>Total HIV Positive</h3>
+                <p class="impact-total" id="total-positive">4</p>
+            </article>
+        </div>
+
+        <!-- Table -->
+        <div class="report-table-wrapper">
+            <table class="report-table" id="impact-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>People Tested</th>
+                        <th>HIV Negative</th>
+                        <th>HIV Positive</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Update these rows every month -->
+                    <tr>
+                        <td>December 2025</td>
+                        <td>300</td>
+                        <td>298</td>
+                        <td>3</td>
+                        <td>Ogun</td>
+                    </tr>
+                    <tr>
+                        <td>December 2025</td>
+                        <td>200</td>
+                        <td>199</td>
+                        <td>1</td>
+                        <td>Cross River</td>
+                    </tr>
+                   <!-- <tr>
+                        <td>March 2025</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>Ogun</td>
+                    </tr>
+                    Add more rows as months go by -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Chart 
+        <div class="impact-chart-wrapper">
+            <h3>Monthly Testing Overview</h3>
+            <canvas id="testingChart" aria-label="Monthly HIV testing chart" role="img"></canvas>
+        </div>
+
+         PDF Button 
+        <div class="impact-actions">
+            <button class="btn" id="download-pdf">Download PDF Report</button>
+        </div>
+
+        <p class="impact-note">
+            These monthly reports are updated regularly as outreach activities are conducted 
+            across communities in Ogun State and Cross River State.
+        </p>
+    </div>
+</section>-->
+
+
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>In Pictures</h2>
+            <p class="section-intro">
+                A glimpse into our outreaches, trainings, and community engagements.
+            </p>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/DSC09345.jpg" alt="Community sensitization with women and girls">
+                    <figcaption>Community sensitization on gender-based violence and rights.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09346.jpg" alt="Health education session">
+                    <figcaption>Health education on HIV/AIDS and reproductive health.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09347.jpg" alt="Facilitator guiding a group discussion">
+                    <figcaption>Facilitated conversations with young women on safety and consent.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09348.jpg" alt="Outreach event in community">
+                    <figcaption>Outreach program building awareness across local communities.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09349.jpg" alt="Women attending outreach program">
+                    <figcaption>Women engaging actively in awareness sessions.</figcaption>
+                </figure>
+
+                <!-- Rest of your images kept, just cleaned a bit -->
+                <figure class="gallery-item">
+                    <img src="images/DSC09352.jpg" alt="Group photo of participants">
+                    <figcaption>Community sensitization on gender-based violence and rights.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09354.jpg" alt="Group photo of participants">
+                    <figcaption>Community sensitization on gender-based violence and rights.</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/DSC09357.jpg" alt="Market outreach">
+                    <figcaption>Educating market men and women with HIV messages.</figcaption>
+                </figure>
+
+                <!-- You can keep all the remaining images as you had them -->
+                <!-- I’m leaving most as-is for brevity, but your structure is correct -->
+                <!-- Just continue with the same pattern: figure > img + figcaption -->
+                <!-- ... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <article class="team-card">
+                    <img src="images/Mercypic.jpg" alt="Portrait of Mercy Osazee Aikhionbare">
+                    <h3>Mercy Osazee Aikhionbare</h3>
+                    <p class="team-role">Founder &amp; Executive Director</p>
+                    <p>
+                        Leads the vision and strategic direction of MercyEliana Foundation, builds
+                        partnerships, and ensures all programs centre the needs of women and girls.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <img src="images/Vic.png" alt="Portrait of Victory Vincent">
+                    <h3>Victory Vincent</h3>
+                    <p class="team-role">Program Officer</p>
+                    <p>
+                        Oversees program planning, coordinates volunteers, and manages outreach and
+                        community engagements on the ground.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-avatar">Vols</div>
+                    <h3>Volunteer Network</h3>
+                    <p class="team-role">Community Volunteers</p>
+                    <p>
+                        A growing network of passionate volunteers supporting advocacy, health
+                        education, tech training, and field activities.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET INVOLVED -->
     <section class="get-involved" id="get-involved">
         <div class="container">
             <h2>Get Involved</h2>
-            <div class="involvement-options">
-                <div class="option">
+            <p class="section-intro">
+                Your support helps us reach more women and girls with protection, health information
+                and life-changing skills. Partner with us today.
+            </p>
+
+            <div class="involvement-grid">
+                <article class="involvement-card">
                     <i class="fas fa-hand-holding-usd"></i>
                     <h3>Donate</h3>
-                    <p>Support our cause with a financial contribution</p>
-                    <a href="#" class="btn">Donate Now</a>
-                </div>
-                <div class="option">
+                    <p>
+                        Support our cause with a one-time or recurring financial contribution to
+                        strengthen our programs and reach.
+                    </p>
+                    <!-- When your PayPal donate link is ready, replace #contact with that URL -->
+                    <a href="#contact" class="btn">Discuss Donation</a>
+                </article>
+
+                <article class="involvement-card">
                     <i class="fas fa-hands-helping"></i>
                     <h3>Volunteer</h3>
-                    <p>Give your time and skills to help our programs</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwQ1ukBRf754Pc7GGEx34Z200nJ09e0AfYQiefcoA7fXuxQA/viewform?usp=dialog" class="btn">Volunteer</a>
-                </div>
-               
+                    <p>
+                        Give your time and skills to help our programs grow—facilitation, media,
+                        tech training, counselling, and more.
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwQ1ukBRf754Pc7GGEx34Z200nJ09e0AfYQiefcoA7fXuxQA/viewform?usp=dialog"
+                       target="_blank" class="btn">Become a Volunteer</a>
+                </article>
+
+                <article class="involvement-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partner With Us</h3>
+                    <p>
+                        We collaborate with NGOs, donors, corporate organisations, and government
+                        agencies to scale impact.
+                    </p>
+                    <a href="#contact" class="btn btn-outline">Partnership Inquiry</a>
+                </article>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <div class="contact-container">
+            <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Get in Touch</h3>
-                    <p><i class="fas fa-envelope"></i> mercychris026@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (289) 775-3074/ +1 (904) 672-7266</p>
-                    <p><i class="fas fa-map-marker-alt"></i>Dabo Shopping Mall Ladoke Akintola boulevard Garki 2, Abuja Nigeria</p>
-                    <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="https://x.com/mercyeliana_?s=11"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/mercyeliana_foundation?igsh=YmEwYndhNjUxeG5q&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <p><i class="fas fa-envelope"></i> MercyElianaFoundation@outlook.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (289) 775-3074 / +1 (904) 672-7266</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dabo Shopping Mall, Ladoke Akintola Boulevard, Garki 2, Abuja, Nigeria</p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/19zeUcaVEr/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/mercyeliana_?s=11" target="_blank" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mercyeliana_foundation?igsh=YmEwYndhNjUxeG5q&utm_source=qr"
+                           target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/mercyeliana-foundation" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Your Message" required></textarea>
+
+                <form class="contact-form"
+                      action="https://formsubmit.co/7921a3be524a25ca91a3f0ba1d406be3"
+                      method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <input type="text" name="subject" placeholder="Subject" />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+
+                    <!-- FormSubmit options -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New message from MercyEliana Foundation website">
+
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
+</main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/MercyEliana.png" alt="MercyEliana Foundation Logo">
-                    <p>Empowering women and girls through advocacy, education, and technology.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#programs">Programs</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter for updates on our programs and events.</p>
-                    <form>
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 MercyEliana Foundation. All Rights Reserved.</p>
-            </div>
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <img src="images/MercyEliana.png" alt="MercyEliana Foundation Logo" />
+            <p>Empowering women and girls through advocacy, health education, and technology.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>   
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Subscribe for updates on our programs, stories, and opportunities.</p>
+            <form>
+                <input type="email" placeholder="Your Email" />
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 MercyEliana Foundation. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/12897753074"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with MercyEliana Foundation on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Load Chart.js first -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<!-- Then your custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
